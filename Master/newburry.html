@@ -1,0 +1,501 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview: New Burry</title>
+<script type="text/javascript">
+	
+	function addcom(){
+	var table= document.getElementById("comtable")
+	var row=table.insertRow(0);
+	var cell0=row.insertCell(0);
+	var cell1=row.insertCell(1);
+
+	var time = new Date();
+		var m ="";
+		if(parseInt(time.getHours())<=12){
+			m="AM";
+		}
+		else{
+			m="PM";
+		}	
+		
+	var displayname= document.getElementById("namee").value;
+		var textfcom=document.getElementById("tfc").value;
+		if(displayname.value==""){alert("กรอกชื่อด้วยนะแจ๊ะ");}
+		else{cell0.innerHTML="สวัสดี  :"+"  "+displayname+" " ;}
+		if(displayname.value==""){alert("กรอกความคิดเห็นด้วยนะไม่ใช่ว่างไว้!!");}
+		else{cell1.innerHTML="  "+"แสดงความคิดเห็นว่า"+"    "+textfcom;+"  "+"เมื่อเวลา"+time.getHours()+m+" "+time.getMinutes(); }
+	
+		
+		
+	}
+	</script>
+
+<style>
+@import url("../thaisansneue_ultralight/stylesheet.css");
+	a:link{color: white; text-decoration: none;}
+	a:hover{color: white; text-decoration: none; cursor: pointer; transition: 0.3s; opacity: 0.5;}
+	a:active{color: white; text-decoration: none;}
+	a:visited{color: white;  text-decoration: none;}
+	.tbar{
+		width: 1200px;
+	height: 80px;
+	
+	background-color: #231f20;
+	}
+	.sbar{
+	position: relative;
+	top:1600px;
+		
+	width: 1200px;
+	height: 60px;
+	background-color: #000000;
+	box-shadow: 0px 10px 14.58px 12.42px rgba(1, 1, 1, 0.46);
+	}
+	
+	.logo{
+	position: absolute;
+		margin-top:10px;
+		margin-left:170px;
+	}
+	div{font-family: 'thaisansneue ultralight';
+	}
+	.home{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 310px;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	}
+	.Review{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 549px;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	}
+	.Preview{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 629px;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	}
+	
+	.Kkc{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 710px;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	}
+	.Contact{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 789px;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	}
+	.Aboutme{
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 868px;
+	color: white;
+	font-size: 24px;
+	font-weight: bold;
+	}
+	.piche{
+	
+	width: 1200px;
+	height: 338px;
+	background-color: #ffa00a;
+	
+	}
+		
+	h1{
+	position: absolute;
+		top:70px;
+		left:248px;
+	font-size: 72px;
+	font-weight: 200;
+	color:white;
+	}
+	h2{
+	position: absolute;
+	top: 250px;
+	left: 248px;
+	font-size: 48px;
+	font-weight: bold;
+	color: white;
+}
+	h3{
+	position: absolute;
+	top: 457px;
+	left:248px;
+	font-size:48px;
+	font-weight: bold;
+	color:black;}
+	p{position: absolute;
+	top: 707px;
+	left:231px;
+	font-size:24px;
+	font-weight: 300;
+		
+	color:black;
+	height:197px;
+	width:387px;
+	}
+	p2
+	{position: absolute;
+	top:15px;
+	left: 340px;
+	font-size:18px;
+	font-weight: 200;
+	
+	color:white;}
+	.pic1{
+	position: absolute;
+	top:725px;
+	left:650px;
+	}
+	.pic2{
+	position: absolute;
+	top:969px;
+	left:231px;
+	transform: rotate(180deg);
+	}
+	.pic3{
+	position: absolute;
+	top:975px;
+	left:650px;
+	}
+	.pic4{
+	position: absolute;
+	top:1220px;
+	left:231px;
+	}
+	.pic5{
+	position: absolute;
+	top:1220px;
+	left:650px;
+	}
+	.com{
+	position:  absolute;
+	top: 1750px;
+	left : 231px;
+
+	
+	}
+	
+	.textcom{
+	position : absolute;
+		top: 1630px;
+	left : 231px;
+		font-weight: 600;
+		font-size :48px;
+	}
+	.textname{
+		position: absolute;
+		top : 1700px;
+		left : 231px;
+		font-weight: 600;
+		font-size :32px;
+	}
+	.textcomn{
+		position: absolute;
+		top :1700px;
+		left :350px;
+	}
+	.butt{
+		display: flex;
+		top: 1920px;
+		left: 231px;
+		width: 150px;
+	height: 40px;
+	background-color: #231f20;
+	box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);}
+	input{display: flex;
+		top: 1920px;
+		left: 231px;
+		width: 80px;
+	height: 40px;
+	background-color: #231f20;
+	box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.75);
+		
+		font-family: 'thaisansneue ultralight';
+		font-size: 30px;
+		color : white;
+		font-weight: 200;
+		align-items: center;
+		align-content:center;
+	}
+	
+	
+	.textinbut{
+		margin-left: auto;
+		margin-right: auto;
+		font-family: 'thaisansneue ultralight';
+		font-size: 30px;
+		color : white;
+		font-weight: 200;
+		align-items: center;
+		align-content:center;
+		
+	}
+	table,td{
+		position: relative;
+		font-family: 'thaisansneue ultralight';
+		font-size: 32px;
+		font-weight: 500;
+		
+		top : 750px;
+		left :110px;
+	}
+
+
+
+#myImg1 {
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg2 {
+   
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg3 {
+   
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg4 {
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+#myImg5 {
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg1:hover {opacity: 0.7;}
+#myImg2:hover {opacity: 0.7;}
+#myImg3:hover {opacity: 0.7;}
+#myImg4:hover {opacity: 0.7;}
+#myImg5:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Add Animation */
+.modal-content{    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+	#map{
+		position: absolute;
+		top :1500px;
+		left: 660px;
+		height:200px;
+		width:400px;
+	
+	
+	}
+
+
+	</style>
+	
+	
+</head>
+
+<body>
+
+<div class="tbar" width="100%">
+
+<div class="logo"><a href="Index.html">
+<img src="../LOGOFOR-BG-black.png" width="60" height="60" alt=""/></a>
+</div>
+	<div class="home"><a href="homepage.html">Home</a></div>
+<div class="Review">Review</div>
+<div class="Preview">Preview</div>
+<div class="Kkc">KK-City</div>
+<div class="Contact"><a href="contact.html">Contact</a></div>
+<div class="Aboutme">Aboutme</div>
+
+</div>
+
+<div class="piche">
+<img src="../crop for web/pichead.png" width="1200" height="338" alt=""/>
+ <h1>P&nbsp;R&nbsp;E&nbsp;VIEW<br/>R&nbsp;&nbsp;&nbsp;E&nbsp;VIEW</h1>
+  <h2>N&nbsp;E&nbsp;W&nbsp;B&nbsp;U&nbsp;R&nbsp;R&nbsp;Y<br />C&nbsp;O&nbsp;F&nbsp;F&nbsp;E&nbsp;E&nbsp;|&nbsp;H&nbsp;O&nbsp;U&nbsp;S&nbsp;E </h2>
+  <h3>PRE&nbsp;|&nbsp;VIEW<br/>NEW&nbsp;BURRY COFFEE HOUSE<br/>ทางไปประตูเขียว หลังมข</h3>
+  
+  <p>&nbsp;&nbsp;หลังจากเลิกเรียนมาเหนื่อยๆจากการเรียนท้ั้งวันเช้า-เย็น
+เราก็มาร้านนี้ที่ NEW BURRY COFFEE HOUSE สั่ง  Hezellnut Cococa ร้อน  และ คุกกี้รส NUTELLA บรรกาศของร้าน เป็นแนวผ่อนคลายสบายๆ เพลงคลอๆ
+เหมาะกับการทำงานเงียบๆ อ่านหนังสือ หรือดื่มดำกับบรรกาศ
+หลังจากความเครียดต่างๆได้เป็นอย่างดี ร้านอยู่บริเวณใกล้กับ
+ประตูเขียวหลังมอ ข้างกับร้านขนายยา ดรักคอร์เนอร์</p>
+</div>
+<div  class="pic1"><img id="myImg1" src="../souce/21441534_1307058769417130_341047977_o.jpg" width="409" height="230" alt="" align="RIGHT"/>
+
+
+
+</div>
+<div  class="pic2"><img id="myImg2" src="../souce/21390618_1306210102835330_878768182_o.jpg" width="409" height="230" alt=""  /></div>
+<div  class="pic3"><img id="myImg3" src="../souce/21533595_1307058816083792_594526865_o.jpg" width="409" height="230" alt=""/></div>
+
+<div  class="pic4"><img id="myImg4" src="../souce/20170902_194547.jpg" width="409" height="230" alt=""/></div>
+<div  class="pic5"><img id="myImg5" src="../crop for web/picnewburry5.png" width="409" height="230" alt=""/></div>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  
+</div>
+<div id= "map"></div>
+<table id="comtable" >
+<tr>
+</tr>	
+
+</table>
+<div class="textcom">
+COMMENT
+</div>
+<div class="textname">ชื่อ-Name :</div>
+<div class="textcomn">
+<textarea id="namee" style="width:300px; font-weight: 500; font-size: 28px; height: 32px; font-family: 'thaisansneue ultralight'; " ></textarea>
+</div>
+<div class="com" >
+<textarea id="tfc"
+style ="width:800px; height: 100px;
+font-size: 32px;
+font-weight: 500;
+font-family: 'thaisansneue ultralight';"  ></textarea>
+
+<input type="submit" value=" โพสต์" onclick="addcom()">
+
+</div>
+<div class="sbar"><p2>@2017 website for education in 342431 WebTechnology Faculity of Science Khon Kaen University</p2></div>
+
+
+
+
+<script>
+// Get the modal
+
+// Get the image and insert it inside the modal -
+var img = document.getElementById("myImg1");
+var img = document.getElementById("myImg2");
+var img = document.getElementById("myImg3");
+var img = document.getElementById("myImg4");
+var img = document.getElementById("myImg5");
+var modalImg = document.getElementById("img01");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>  
+<script>
+	function initMap(){
+		var mapOptions={
+			
+			center: {lat:16.4615927,lng:102.8268763},zoom 18,
+		}
+		var maps =new google.maps.Map(document.getElementById("map"),mapOptions);
+		var marker=new google.maps.Marker(
+		{
+			position: new google.maps.LatLng(16.4615927,102.8268763),map:maps;
+			title :"NEWBURY COFFEE HOUSE";
+			icon :'"../149060.png"',
+		}
+		);
+		var info = new google.maps.InfoWindow({
+content : '<div style="font-size: 25px;color: gray">NEWBURY COFFEE HOUSE</div>'
+
+});
+		google.maps.event.addListener(marker, 'click', function() {
+		info.open(maps, marker);
+			});
+	}
+	</script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAK3RgqSLy1toc4lkh2JVFQ5ipuRB106vU&;callback=initMap" async defer></script>
+</body>
+
+</html>

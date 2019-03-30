@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'thaisansneue ultralight';
+	src: url('thaisansneue-ultralight-webfont.eot');
+	src: url('thaisansneue-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+		url('thaisansneue-ultralight-webfont.woff') format('woff'),
+		url('thaisansneue-ultralight-webfont.ttf') format('truetype'),
+		url('thaisansneue-ultralight-webfont.svg') format('svg');
+}
